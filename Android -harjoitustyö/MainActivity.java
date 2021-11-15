@@ -34,13 +34,6 @@ public class MainActivity extends AppCompatActivity {
         resultTextView.setText("BMI: "+ bmi);
     }
 
-    public void  dialPhone (View view){
-        Intent intent = new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("tel:+358451133858"));
-        if (intent.resolveActivity(getPackageManager())!= null){
-            startActivity(intent);
-        }
-    }
 
     public void openSettings(View view){
         //Avataan toinen aktiviteetti
